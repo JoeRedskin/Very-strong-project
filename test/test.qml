@@ -8,55 +8,66 @@ Window {
     visible: true
     width: 1280
     height: 720
-    property alias column: column
-    property alias button: button
 
 
     Item{
         id: item1
 
         anchors.fill: parent
-
-
-
-        Image
-        {
-            source: "menu.jpeg"
-            anchors.fill: parent
+        
+        Main {
+            id: menu
         }
 
 
-
-        Column {
-            id: column
-            width: 300
-            anchors.verticalCenterOffset: 12
-            anchors.horizontalCenterOffset: -416
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            spacing: 5
-
-            Button {
-                id: button
-                width: 300
-                height: 50
-
-                text: "Новая Игра"
-                textColor: "purple"
-                backgroundColor: "red"
-                activeBackgroundColor: "blue"
-
+        states: [
+            State {
+                name: "menu"
+                PropertyChanges {
+                    target: menu
+                    visible: true
+                }
+                PropertyChanges {
+                    target: gameplay
+                    visible: false
+                }
+                PropertyChanges {
+                    target: options
+                    visible: false
+                }
+            },
+            State {
+                name: "gameplay"
+                PropertyChanges {
+                    target: menu
+                    visible: false
+                }
+                PropertyChanges {
+                    target: gameplay
+                    visible: true
+                }
+                PropertyChanges {
+                    target: options
+                    visible: false
+                }
+            },
+            State {
+                name: "options"
+                PropertyChanges {
+                    target: menu
+                    visible: false
+                }
+                PropertyChanges {
+                    target: gameplay
+                    visible: false
+                }
+                PropertyChanges {
+                    target: options
+                    visible: true
+                }
             }
+        ]
 
-            Button {
-                text: "Настройки"
-            }
-
-            Button {
-                text: "Выход"
-            }
-        }
-
-
+        state: "menu"
     }
 }
