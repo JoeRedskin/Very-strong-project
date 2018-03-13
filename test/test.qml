@@ -15,7 +15,7 @@ Window {
 
         anchors.fill: parent
         
-        Main {
+        Menu {
             id: menu
         }
 
