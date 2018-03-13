@@ -19,7 +19,7 @@ Window {
             id: menu         
             onGameStart: parent.state = "gameplay"
             onGameOptions: parent.state = "options"
-            onGameExit: parent.state = "exit"
+            onGameExit: Qt.quit()
         }
         Gameplay {
             id: gameplay

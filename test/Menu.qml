@@ -27,9 +27,6 @@ Rectangle {
             id: button
 
             text: "Новая игра"
-            /*textColor: "purple"
-            backgroundColor: "red"
-            activeBackgroundColor: "blue"*/
             onClicked: {
                 game.state = "game"
             }
