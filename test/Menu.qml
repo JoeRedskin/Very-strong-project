@@ -6,10 +6,13 @@ Rectangle {
     Image
     {
         id: image
-        source: "menu.jpeg"
+        source: "menu_fon.jpeg"
         anchors.fill: parent
     }
 
+        signal gameExit
+        signal gameStart
+        signal gameOptions
 
     Column {
         id: column
@@ -24,23 +27,28 @@ Rectangle {
             id: button
 
             text: "Новая игра"
-            textColor: "purple"
+            /*textColor: "purple"
             backgroundColor: "red"
-            activeBackgroundColor: "blue"
+            activeBackgroundColor: "blue"*/
+            onClicked: {
+                game.state = "game"
+            }
         }
 
         Button {
             id: button1
             text: "Настройки"
             onClicked: {
-                item1.state = "options"
+                menu.gameOptions()
+
             }
         }
 
         Button {
             id: button2
             text: "Выход"
-            onClicked: Qt.quit()
+            onClicked: menu.gameExit()
+
         }
     }
 }

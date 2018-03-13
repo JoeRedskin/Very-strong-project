@@ -15,8 +15,19 @@ Window {
 
         anchors.fill: parent
         
-        Main {
-            id: menu
+        Menu {
+            id: menu         
+            onGameStart: parent.state = "gameplay"
+            onGameOptions: parent.state = "options"
+            onGameExit: parent.state = "exit"
+        }
+        Gameplay {
+            id: gameplay
+            //onGameStopped: parent.state = "menu"
+        }
+        Opt {
+            id: options
+            //onClicked: parent.state = "menu"
         }
 
 
