@@ -21,7 +21,7 @@ Window {
             onGameOptions: parent.state = "options"
             onGameExit: Qt.quit()
         }
-        Gameplay {
+        Gamepl {
             id: gameplay
             //onGameStopped: parent.state = "menu"
         }
