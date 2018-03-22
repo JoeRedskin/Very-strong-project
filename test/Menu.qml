@@ -5,14 +5,27 @@ Rectangle {
 
     Image
     {
+
         id: image
-        source: "menu_fon.jpeg"
+        source: "image/menu_fon.jpeg"
         anchors.fill: parent
+        fillMode: Image.PreserveAspectCrop
     }
 
         signal gameExit
         signal gameStart
         signal gameOptions
+ signal gameMusic
+
+
+
+
+
+
+
+
+
+
 
     Column {
         id: column
@@ -23,16 +36,24 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         spacing: 5
 
-        Button {
+
+
+
+
+
+
+
+
+        ButtonT {
             id: button
 
             text: "Новая игра"
             onClicked: {
-                game.state = "game"
+                menu.gameStart()
             }
         }
 
-        Button {
+        ButtonT {
             id: button1
             text: "Настройки"
             onClicked: {
@@ -41,7 +62,7 @@ Rectangle {
             }
         }
 
-        Button {
+        ButtonT {
             id: button2
             text: "Выход"
             onClicked: menu.gameExit()

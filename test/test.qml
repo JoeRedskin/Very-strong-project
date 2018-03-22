@@ -1,5 +1,9 @@
 import QtQuick 2.9
 import QtQuick.Window 2.3
+import QtMultimedia 5.9
+
+
+
 
 Window {
     id: mainWindow
@@ -8,77 +12,116 @@ Window {
     visible: true
     width: 1280
     height: 720
+    maximumWidth: 1280
+    maximumHeight: 720
+    minimumWidth: 360
+    minimumHeight: 240
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    SoundEffect {
+        id: playSound
+        source: "Roland-JV-2080-Nylon-Gtr-C3.wav"
+    }
+    MouseArea {
+        id: playArea
+        onPressed: { playSound.play() }
+    }
+
+
 
 
     Item{
-        id: item1
 
-        anchors.fill: parent
+
+      id: item1
+
+
+
+
+
+      MediaPlayer {
+            id: playMusic
+            source: "12.wav"
+
+        }
+      MouseArea {
+            id: play
+            anchors.fill: parent
+            onPressed:  { playMusic.play() }
+        }
+
+
+
+
+
+
+
+
+
+      anchors.fill: parent
         
-        Menu {
-            id: menu         
-            onGameStart: parent.state = "gameplay"
-            onGameOptions: parent.state = "options"
+
+
+
+      Menu {
+
+
+
+
+            id: menu
+
+            onGameStart: {parent.state = "gameplay"; playSound.play()}
+            onGameOptions: {parent.state = "options"; playSound.play()}
             onGameExit: Qt.quit()
         }
         Gameplay {
-            id: gameplay
-            //onGameStopped: parent.state = "menu"
+                  id: gameplay
+            onGoMenu: {parent.state = "menu";playSound.play()}
         }
         Opt {
             id: options
-            //onClicked: parent.state = "menu"
+            onGoMenu:{ parent.state = "menu";playSound.play()}
+            onGameExit: Qt.quit()
         }
 
-
-        states: [
+  states: [
             State {
                 name: "menu"
-                PropertyChanges {
-                    target: menu
-                    visible: true
-                }
-                PropertyChanges {
-                    target: gameplay
-                    visible: false
-                }
-                PropertyChanges {
-                    target: options
-                    visible: false
-                }
+                PropertyChanges {target: menu; visible: true}
+                PropertyChanges {target: gameplay; visible: false}
+                PropertyChanges {target: options; visible: false}
             },
             State {
                 name: "gameplay"
-                PropertyChanges {
-                    target: menu
-                    visible: false
-                }
-                PropertyChanges {
-                    target: gameplay
-                    visible: true
-                }
-                PropertyChanges {
-                    target: options
-                    visible: false
-                }
+                PropertyChanges {target: menu; visible: false}
+                PropertyChanges {target: gameplay; visible: true}
+                PropertyChanges {target: options; visible: false}
             },
             State {
                 name: "options"
-                PropertyChanges {
-                    target: menu
-                    visible: false
-                }
-                PropertyChanges {
-                    target: gameplay
-                    visible: false
-                }
-                PropertyChanges {
-                    target: options
-                    visible: true
-                }
+                PropertyChanges {target: menu; visible: false}
+                PropertyChanges {target: gameplay; visible: false}
+                PropertyChanges {target: options; visible: true}
             }
         ]
 
         state: "menu"
+
     }
 }
