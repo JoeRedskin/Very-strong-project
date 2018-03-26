@@ -91,21 +91,12 @@ Window {
             onGameExit: Qt.quit()
         }
         Gameplay {
-<<<<<<< HEAD
-            id: gameplay
-            //onMenu: parent.state = "menu"
-        }
-        Opt {
-            id: options
-            onGoMenu: parent.state = "menu"
-=======
                   id: gameplay
             onGoMenu: {parent.state = "menu";playSound.play()}
         }
         Opt {
             id: options
             onGoMenu:{ parent.state = "menu";playSound.play()}
->>>>>>> TestWork
             onGameExit: Qt.quit()
         }
 
