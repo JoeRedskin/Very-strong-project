@@ -8,14 +8,14 @@ Rectangle {
     Image
     {
         id: image
-        source: "image/Map_v1.0.png"
+        source: "image/Map_v2.0.png"
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
     }
 
     ButtonT {
         id: buttonT
-        x: 0; y: 430
+        x: 0; y: 0
         width: 114; height: 50
         text: "Назад"
         onClicked: gameplay.goMenu()
