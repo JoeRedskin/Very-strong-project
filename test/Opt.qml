@@ -3,9 +3,7 @@ import QtQuick.Controls 2.2
 
 Rectangle {
     id: opt
-
     anchors.fill: parent
-
     Image
     {
         id: image
@@ -18,7 +16,6 @@ Rectangle {
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
     }
-
     signal goMenu
     signal gameExit
 
@@ -30,28 +27,22 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
         spacing: 5
-        ButtonT {
-            id: button
-            text: "Графика"
+        ButtonT {id: button; text: "Графика"
             onClicked: {opt.state = "graphics";playSound.play()}
         }
 
         ButtonT {
-            id: button1
-            text: "Музыка"
+            id: button1; text: "Музыка"
             onClicked: {opt.state = "music";playSound.play()}
         }
 
         ButtonT {
-            id: button2
-            text: "Авторы"
+            id: button2; text: "Авторы"
             onClicked: {opt.state = "autors";playSound.play()}
-
         }
 
         ButtonT {
-            id: button3
-            text: "Назад";
+            id: button3; text: "Назад";
             onClicked: {opt.goMenu();playSound.play()}
         }
     }
@@ -99,8 +90,7 @@ Rectangle {
         }
 
         ButtonT {
-            id: buttonM1
-            text: "Назад"
+            id: buttonM1; text: "Назад"
             onClicked: {opt.state = "option";playSound.play()}
         }
     }
@@ -128,13 +118,11 @@ Rectangle {
         }
 
         ButtonT {
-            id: buttonT
-            text: "просто проверка "
+            id: buttonT; text: "просто проверка "
         }
 
         ButtonT {
-            id: buttonG1
-            text: "Назад"
+            id: buttonG1; text: "Назад"
             onClicked: {opt.state = "option";playSound.play()}
         }
 
@@ -161,10 +149,8 @@ Rectangle {
         }
 
         ButtonT {
-            id: buttonA1
-            width: 100
-            height: 35
-            text: "Назад"
+            id: buttonA1; text: "Назад"
+            width: 100; height: 35
             onClicked: {opt.state = "option";playSound.play()}
         }
     }
