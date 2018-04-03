@@ -1,5 +1,17 @@
-import QtQuick 2.0
+import QtQuick 2.9
+import QtMultimedia 5.9
+  Rectangle {
+      anchors.fill: parent
 
-Item {
+      Image
+      {
+
+          id:playimage
+          source: "image/travka2.jpg"
+          anchors.fill: parent
+          fillMode: Image.PreserveAspectCrop
+      }
+
+
 
 }
