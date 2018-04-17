@@ -5,7 +5,6 @@ Rectangle {
 
     Image
     {
-
         id: image
         source: "image/menu_fon.jpeg"
         anchors.fill: parent
@@ -15,17 +14,7 @@ Rectangle {
         signal gameExit
         signal gameStart
         signal gameOptions
- signal gameMusic
-
-
-
-
-
-
-
-
-
-
+        signal gameMusic
 
     Column {
         id: column
@@ -36,37 +25,19 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         spacing: 5
 
-
-
-
-
-
-
-
-
         ButtonT {
-            id: button
-
-            text: "Новая игра"
-            onClicked: {
-                menu.gameStart()
-            }
+            id: button; text: "Новая игра"
+            onClicked: {menu.gameStart()}
         }
 
         ButtonT {
-            id: button1
-            text: "Настройки"
-            onClicked: {
-                menu.gameOptions()
-
-            }
+            id: button1; text: "Настройки"
+            onClicked: {menu.gameOptions() }
         }
 
         ButtonT {
-            id: button2
-            text: "Выход"
+            id: button2; text: "Выход"
             onClicked: menu.gameExit()
-
         }
     }
 }
