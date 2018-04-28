@@ -7,7 +7,7 @@ Rectangle {
     {
 
         id:playimage
-        source: "image/travka2.jpg"
+        source: "image/new_trava.png"
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
     }
