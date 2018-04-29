@@ -10,7 +10,8 @@ Gameplay.qml\
 Menu.qml\
 Opt.qml\
 Play.qml\
-test.qml
+test.qml \
+    main.cpp
 HEADERS += \
 tests/GT.h
 
