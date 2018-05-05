@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QObject>
 #include <QWidget>
-
+#include "coordinatesofobjects.h"
 class herocontrol
 {
 private:
@@ -13,10 +13,7 @@ private:
         int x,y;
     };
 
-
-
-
-    herocontrol();
+  herocontrol();
 };
 
 #endif // HEROCONTROL_H

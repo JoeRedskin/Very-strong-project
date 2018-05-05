@@ -18,7 +18,8 @@ Opt.qml\
 Play.qml\
 test.qml \
   main.cpp \
-    Controlers/herocontrol.cpp
+    Controlers/herocontrol.cpp \
+    Controlers/coordinatesofobjects.cpp
 
 
 
@@ -32,7 +33,8 @@ QML_DESIGNER_IMPORT_PATH =
 
 SOURCES +=
 
-HEADERS +=Controlers/herocontrol.h
+HEADERS +=Controlers/herocontrol.h \
+    Controlers/coordinatesofobjects.h
 
 
 qnx: target.path = /tmp/$${TARGET}/bin
