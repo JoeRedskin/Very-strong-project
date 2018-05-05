@@ -32,7 +32,6 @@ QML_IMPORT_PATH =
 QML_DESIGNER_IMPORT_PATH =
 
 SOURCES +=
-
 HEADERS +=Controlers/herocontrol.h \
     Controlers/coordinatesofobjects.h
 

@@ -5,15 +5,15 @@
 #include <QObject>
 #include <QWidget>
 #include "coordinatesofobjects.h"
-class herocontrol
+class herocontrol:public coordinatesofobjects
 {
 private:
     struct place
     {
         int x,y;
-    };
+    }
+    ;
 
-  herocontrol();
 };
 
 #endif // HEROCONTROL_H
