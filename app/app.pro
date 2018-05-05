@@ -17,7 +17,8 @@ Menu.qml\
 Opt.qml\
 Play.qml\
 test.qml \
-   main.cpp
+  main.cpp \
+    Controlers/herocontrol.cpp
 
 
 
@@ -31,7 +32,7 @@ QML_DESIGNER_IMPORT_PATH =
 
 SOURCES +=
 
-HEADERS +=
+HEADERS +=Controlers/herocontrol.h
 
 
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -45,7 +46,5 @@ DISTFILES += \
     image/Hero.png \
     image/fight.png \
     image/left.png \
-    image/travka2.jpg \
-    image/Map_v3.0.png \
-    image/fon_for_menu.png \
-    image/hero_spr.png
+    image/travka2.jpg
+
