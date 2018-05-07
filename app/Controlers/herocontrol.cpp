@@ -1,12 +1,9 @@
 #include "herocontrol.h"
-#include "coordinatesofobjects.h"
-herocontrol::herocontrol()
+
+herocontrol::GG(int valX, int valY)//Характеристика главного героя
 {
-
-
-
-
-
-
+    setPos(valX, valY);
 
 }
+
+

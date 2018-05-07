@@ -1,9 +1,8 @@
 #include "coordinatesofobjects.h"
 
-
-void coordinatesofobjects (int xVal, int yVal)
+coordinatesofobjects::setPos(int xVal, int yVal)
 {
-    pos.x = xVal;
+   pos.x = xVal;
     pos.y = yVal;
 }
     int coordinatesofobjects::getPosX(){

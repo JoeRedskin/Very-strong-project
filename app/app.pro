@@ -47,5 +47,5 @@ DISTFILES += \
     image/Hero.png \
     image/fight.png \
     image/left.png \
-    image/travka2.jpg
-
+    image/travka2.jpg\
+    image/new_trava.png

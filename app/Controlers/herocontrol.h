@@ -7,13 +7,14 @@
 #include "coordinatesofobjects.h"
 class herocontrol:public coordinatesofobjects
 {
-private:
-    struct place
-    {
-        int x,y;
-    }
-    ;
 
+public:
+    GG(int valX, int valY);
 };
 
+
 #endif // HEROCONTROL_H
+
+
+
+
