@@ -1,6 +1,6 @@
 #include "herocontrol.h"
 
-herocontrol::GG(int valX, int valY)//Характеристика главного героя
+int  herocontrol::setPos(int valX, int valY)//Характеристика главного героя
 {
     setPos(valX, valY);
 

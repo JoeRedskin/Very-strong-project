@@ -12,7 +12,7 @@ private:
     }
     pos;
 protected:
-    void setPos(int xVal, int yVal);
+    int setPos(int xVal, int yVal);
 public:
     int getPosX();
     int getPosY();

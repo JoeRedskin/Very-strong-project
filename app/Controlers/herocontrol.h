@@ -9,7 +9,8 @@ class herocontrol:public coordinatesofobjects
 {
 
 public:
-    GG(int valX, int valY);
+
+int setPos(int valX, int valY);
 };
 
 
