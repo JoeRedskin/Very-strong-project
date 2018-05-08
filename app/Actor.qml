@@ -36,7 +36,7 @@ Item {
 
         Sprite{
             name: "attack"
-            source: "image/Fight.png"
+            source: "image/fight.png"
 
             frameHeight:45
             frameWidth:46

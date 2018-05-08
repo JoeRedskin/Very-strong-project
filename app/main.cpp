@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
   view.show();
   QQuickItem* child;
   QQmlApplicationEngine engine;
-  engine.load(QUrl(QStringLiteral("qrc:///Board.qml")));
+  engine.load(QUrl(QStringLiteral("qrc:///test.qml")));
   QObject *rootObject = engine.rootObjects().first();
   QQuickItem *qmlObject = rootObject->findChild<QQuickItem*>("grid")->findChild<QQuickItem*>("repeter");
   QMetaObject::invokeMethod(qmlObject,"itemAt",Qt::DirectConnection,   Q_RETURN_ARG (QQuickItem*,child), Q_ARG(int,32));
@@ -37,3 +37,4 @@ int main(int argc, char *argv[])
   return app.exec();
 }
 I used qDebug to verify the property changed
+*/

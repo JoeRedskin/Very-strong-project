@@ -1,9 +1,15 @@
 #include "herocontrol.h"
+#include "coordinatesofobjects.h"
+#define HEALTH 100
+void  herocontrol::setPos(int valX, int valY)
 
-int  herocontrol::setPos(int valX, int valY)//Характеристика главного героя
 {
+
     setPos(valX, valY);
 
 }
 
+void  herocontrol::Statics(int vDamage, int vHealth, int vSpeed, int Exp)
+{
 
+}

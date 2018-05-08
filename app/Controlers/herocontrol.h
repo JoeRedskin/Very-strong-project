@@ -10,9 +10,16 @@ class herocontrol:public coordinatesofobjects
 
 public:
 
-int setPos(int valX, int valY);
-};
+void setPos(int valX, int valY);
 
+public:
+   void  Statics(int vDamage , int vHealth,int vSpeed, int Exp);
+
+
+
+
+
+};
 
 #endif // HEROCONTROL_H
 

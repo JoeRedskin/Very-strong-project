@@ -10,13 +10,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-Actor.qml\
-ButtonT.qml\
-Gameplay.qml\
-Menu.qml\
-Opt.qml\
-Play.qml\
-test.qml \
+#Actor.qml\
+#ButtonT.qml\
+#Gameplay.qml\
+#Menu.qml\
+#Opt.qml\
+#Play.qml\
+#test.qml \
   main.cpp \
     Controlers/herocontrol.cpp \
     Controlers/coordinatesofobjects.cpp
