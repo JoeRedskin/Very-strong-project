@@ -9,9 +9,6 @@ void herocontrol::setPos(int valX, int valY)
 
 }
 
-void  herocontrol::Statics()
-
-{
 
 
-}
+

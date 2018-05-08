@@ -5,25 +5,20 @@
 #include <QObject>
 #include <QWidget>
 #include "coordinatesofobjects.h"
+#include"statusofobject.h"
 class herocontrol:public coordinatesofobjects
 {
 
 public:
 
 void setPos(int valX, int valY);
-
-
+};
+ class OurHero :public statusofobject
+{
 public:
-    unsigned int Exp();
-    unsigned int  Level();
-    unsigned int  Money();
-    void Statics(Exp(),Level(),Money())
-    {
-
-
-    }
-public:
-
+unsigned int Level();
+   unsigned int Exp();
+   unsigned int Money();
 };
 
 #endif // HEROCONTROL_H
