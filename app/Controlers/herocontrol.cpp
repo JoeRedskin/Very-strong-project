@@ -9,7 +9,9 @@ void herocontrol::setPos(int valX, int valY)
 
 }
 
-void  herocontrol::Statics(int vDamage, int vHealth, int vSpeed, int Exp)
+void  herocontrol::Statics()
+
 {
+
 
 }

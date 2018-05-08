@@ -14,24 +14,15 @@ void setPos(int valX, int valY);
 
 
 public:
-   void  Statics(int vDamage , int vHealth,int vSpeed, int Exp)
-   {
-       vDamage=100;
-       vHealth=1;
-       vSpeed=50;
-       Exp=0;
-       //if (kill=true)
-       //{
-       // Exp=Exp+50;
-   //}
+    unsigned int Exp();
+    unsigned int  Level();
+    unsigned int  Money();
+    void Statics(Exp(),Level(),Money())
+    {
 
 
-
-
-   }
-
-
-
+    }
+public:
 
 };
 
