@@ -29,7 +29,7 @@ Window {
       MouseArea {
             id: play
             anchors.fill: parent
-            onPressed:  { playMusic.play() }
+            onPressed: { playMusic.play() }
         }
       anchors.fill: parent
 
