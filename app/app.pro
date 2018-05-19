@@ -10,17 +10,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-#Actor.qml\
-#ButtonT.qml\
-#Gameplay.qml\
-#Menu.qml\
-#Opt.qml\
-#Play.qml\
-#test.qml \
-  main.cpp \
-    Controlers/herocontrol.cpp \
-    Controlers/coordinatesofobjects.cpp \
-     Controlers/statusofobject.cpp
+main.cpp \
+Controlers/herocontrol.cpp \
+Controlers/coordinatesofobjects.cpp \
+ Controlers/statusofobject.cpp \
+ Controlers/enemy.cpp
 
 
 
@@ -35,7 +29,9 @@ QML_DESIGNER_IMPORT_PATH =
 SOURCES +=
 HEADERS +=Controlers/herocontrol.h \
         Controlers/coordinatesofobjects.h \
-        Controlers/statusofobject.h
+        Controlers/statusofobject.h \
+        Controlers/enemy.h
+
 
 
 qnx: target.path = /tmp/$${TARGET}/bin

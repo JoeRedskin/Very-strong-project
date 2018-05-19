@@ -1,10 +1,11 @@
 #ifndef COORDINATESOFOBJECTS_H
 #define COORDINATESOFOBJECTS_H
-
-
-class coordinatesofobjects
+#include <QObject>
+#include <QQuickItem>
+#include <QSharedDataPointer>
+class coordinatesofobjects:public QObject
 {
-
+Q_OBJECT
 private:
     struct coordinates
     {
@@ -12,7 +13,7 @@ private:
     }
     pos;
 protected:
-    int setPos(int xVal, int yVal);
+  Q_INVOKABLE  int setPos(int xVal, int yVal);
 public:
     int getPosX();
     int getPosY();

@@ -1,4 +1,4 @@
-
+import com.myself 1.0
 import QtQuick 2.9
 import QtMultimedia 5.9
 Rectangle {
@@ -17,14 +17,26 @@ Rectangle {
 
     Actor
     {
-        x:100
-        y:100
+        x:{coord.getPosX(100)
+            coord.setPos()
+        }
+        y:{
+        coord.setPos(100,100)
+
+        }
+
+
+
 
         focus: true
 
 
 
 
+    }
+    Coordinatesofobjects
+    {
+     id:coord
     }
 
 

@@ -1,5 +1,5 @@
 import QtQuick 2.0
-
+import com.myself 1.0
 Item {
     id: chelovechek
     width:50
@@ -36,7 +36,7 @@ Item {
 
         Sprite{
             name: "attack"
-            source: "image/fight.png"
+            source: "image/Fight.png"
 
             frameHeight:45
             frameWidth:46
@@ -137,6 +137,9 @@ Item {
 
         }
     }
+
+
+
 
 }
 

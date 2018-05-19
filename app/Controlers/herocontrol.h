@@ -13,7 +13,7 @@ public:
 
 void setPos(int valX, int valY);
 };
- class OurHero :public statusofobject
+class OurHero :public stastusofobject
 {
 public:
 unsigned int Level();

@@ -1,15 +1,16 @@
 #ifndef STATUSOFOBJECT_H
 #define STATUSOFOBJECT_H
 
-
-class statusofobject
+class stastusofobject
 {
 public:
-   int currentHealth();
+   int currentHealth(unsigned int Health);
+   unsigned int Money(unsigned int Money);
    int currentExp();
-
-    virtual bool DamageOnMe(unsigned howmuch);
+    int setdexp();
+    unsigned int  DamageOnMe(unsigned int Damage);
     void tookHP(unsigned amountOfHealth);
+
     bool killer=0;
 };
 

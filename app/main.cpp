@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <Qt>
+#include "Controlers/coordinatesofobjects.h"
 int main(int argc, char *argv[])
 {
 #if defined(Q_OS_WIN)
@@ -10,7 +11,8 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/test.qml")));
+        qmlRegisterType<coordinatesofobjects>("com.myself",1,0,"Coordinatesofobjects");
+    engine.load(QUrl(QStringLiteral("qrc:/test.qml")));  
     if (engine.rootObjects().isEmpty())
         return -1;
 
