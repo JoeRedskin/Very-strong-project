@@ -2,9 +2,9 @@
 #include "statusofobject.h"
 #include "herocontrol.h"
 #include <QObject>
-void Enemy::Enemy()
+void Enemy::Enemy(unsigned int Health,unsigned int Damage, unsigned int Gold)
 {
-
+    setHealth(Health);
     setMoney(Gold);
     setDamage(Damage);
 }

@@ -10,9 +10,7 @@ public:
 Q_INVOKABLE
    void  Enemy(unsigned int Health,unsigned int Damage, unsigned int Gold)
     {
-        Health=100;
-        Damage=4;
-       Gold=5;
+
     }
 Q_INVOKABLE
  unsigned int getMoney();
@@ -28,6 +26,6 @@ private:
  void   setDamage(unsigned int Damage);
  Q_INVOKABLE
    unsigned  D;
-
+void setHealth(unsigned int Health);
     };
 #endif // ENEMY_H
