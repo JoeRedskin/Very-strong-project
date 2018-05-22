@@ -15,7 +15,9 @@ private:
 protected:
   Q_INVOKABLE  int setPos(int xVal, int yVal);
 public:
+    Q_INVOKABLE
     int getPosX();
+    Q_INVOKABLE
     int getPosY();
 
 };

@@ -13,13 +13,17 @@ public:
 
 void setPos(int valX, int valY);
 };
-class OurHero :public stastusofobject
+class OurHero :public statusofobject
 {
+
+
 public:
 unsigned int Level();
    unsigned int Exp();
    unsigned int Money();
+
 };
+
 
 #endif // HEROCONTROL_H
 

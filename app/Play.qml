@@ -1,4 +1,6 @@
+import com.satus 1.0
 import com.myself 1.0
+import com.Enemy 1.0
 import QtQuick 2.9
 import QtMultimedia 5.9
 Rectangle {
@@ -17,26 +19,17 @@ Rectangle {
 
     Actor
     {
-        x:{coord.getPosX(100)
-            coord.setPos()
-        }
-        y:{
-        coord.setPos(100,100)
 
-        }
+Component.onCompleted: {x = coord.getPosX() + 55;
+                        y = coord.getPosY() + 66;
+}
 
+ focus:true
 
-
-
-        focus: true
-
-
-
-
-    }
+  }
     Coordinatesofobjects
     {
-     id:coord
+        id:coord
     }
 
 

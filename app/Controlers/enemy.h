@@ -1,21 +1,33 @@
 #ifndef ENEMY_H
 #define ENEMY_H
-#include "statusofobject.h"
-
-
-class Enemy: public stastusofobject
+#include <QMainWindow>
+#include <QObject>
+#include <QWidget>
+class Enemy:public QObject
 {
+ Q_OBJECT
 public:
-
-    Enemy(unsigned int Health,
-          unsigned int Damage, unsigned int Gold = 100);
-
+Q_INVOKABLE
+   void  Enemy(unsigned int Health,unsigned int Damage, unsigned int Gold)
+    {
+        Health=100;
+        Damage=4;
+       Gold=5;
+    }
+Q_INVOKABLE
  unsigned int getMoney();
+ Q_INVOKABLE
+ unsigned int getDamage();
 
 private:
+ Q_INVOKABLE
    unsigned G;
+   Q_INVOKABLE
    void setMoney(unsigned int Gold);
+   Q_INVOKABLE
+ void   setDamage(unsigned int Damage);
+ Q_INVOKABLE
+   unsigned  D;
 
-
-};
+    };
 #endif // ENEMY_H
