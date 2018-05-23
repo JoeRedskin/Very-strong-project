@@ -1,6 +1,6 @@
 #include "coordinatesofobjects.h"
 #include <QObject>
- int coordinatesofobjects:: setPos(int xVal, int yVal)
+ void coordinatesofobjects:: setPos(int xVal, int yVal)
 {
    pos.x = xVal;
     pos.y = yVal;

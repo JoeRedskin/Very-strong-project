@@ -13,7 +13,7 @@ private:
     }
     pos;
 protected:
-  Q_INVOKABLE  int setPos(int xVal, int yVal);
+  Q_INVOKABLE  void setPos(int xVal, int yVal);
 public:
     Q_INVOKABLE
     int getPosX();
