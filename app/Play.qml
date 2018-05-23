@@ -20,9 +20,14 @@ Rectangle {
     Actor
     {
 
-Component.onCompleted: {x = coord.getPosX() + 55;
-                        y = coord.getPosY() + 66;
+Component.onCompleted: {coord.take(100,150);
+    x=coord.getPosX();
+       y=coord.getPosY();
+
+
 }
+
+
 
  focus:true
 
