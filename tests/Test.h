@@ -6,7 +6,8 @@
 TEST (first, coord)
 {
 coordinatesofobjects obj;
-  int p= obj.getPosX()+55;
-    ASSERT_EQ(p ,55);
+
+  obj.take(40,50);
+   SUCCEED();
 
 }

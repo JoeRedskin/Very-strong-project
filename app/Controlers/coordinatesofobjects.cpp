@@ -11,3 +11,11 @@
 int coordinatesofobjects::getPosY(){
     return pos.y;
 }
+
+void coordinatesofobjects::take(int up, int down)
+{
+    setPos(getPosX() + up, getPosY());
+        setPos(getPosX(), getPosY() + down);
+
+
+}

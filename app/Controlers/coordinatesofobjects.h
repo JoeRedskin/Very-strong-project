@@ -19,7 +19,8 @@ public:
     int getPosX();
     Q_INVOKABLE
     int getPosY();
-
+    Q_INVOKABLE
+    void take(int up, int down);
 };
 
 
