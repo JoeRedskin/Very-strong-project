@@ -1,0 +1,2 @@
+git config --global user.email "alfaseva@yandex.com"
+git config --global user.name "TheSevaOne"
