@@ -29,3 +29,15 @@ TEST(coord,third)
     y=obj.getPosY();
     ASSERT_EQ(y,54);
 }
+
+TEST(money,first)
+{
+
+
+
+
+
+
+
+
+}
