@@ -28,10 +28,4 @@ TEST(coord,third)
     obj.setPos(0,54);
     y=obj.getPosY();
     ASSERT_EQ(y,54);
-
-
-
-
-
-
 }

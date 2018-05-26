@@ -20,7 +20,7 @@ Rectangle {
     Actor
     {
 
-Component.onCompleted: {coord.take(100,150);
+Component.onCompleted: {coord.take(44,44);
     x=coord.getPosX();
        y=coord.getPosY();
 
