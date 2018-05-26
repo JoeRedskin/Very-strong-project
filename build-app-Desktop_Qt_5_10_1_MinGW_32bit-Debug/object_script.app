@@ -1,0 +1,13 @@
+INPUT(
+./qrc_qml.o
+./Actor.o
+./ButtonT.o
+./Gameplay.o
+./Menu.o
+./Opt.o
+./Play.o
+./test.o
+./main.o
+./herocontrol.o
+./coordinatesofobjects.o
+);
