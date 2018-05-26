@@ -24,7 +24,6 @@ Window {
     }
 
     Item{
-      id: item1
       MediaPlayer {id: playMusic; source: "12.wav"}
       MouseArea {
             id: play
@@ -35,13 +34,13 @@ Window {
 
       Menu {
             id: menu
-            onGameStart: {parent.state = "gameplay"; playSound.play()}
+            onGameStart:   {parent.state = "gameplay"; playSound.play()}
             onGameOptions: {parent.state = "options"; playSound.play()}
             onGameExit: Qt.quit()
         }
         Gameplay {
             id: gameplay
-            onGoMenu: {parent.state = "menu";playSound.play()}
+            onGoMenu:     {parent.state = "menu";playSound.play()}
             onChangeCity: {parent.state = "playing";playSound.play()}
         }
         Opt {
@@ -51,7 +50,9 @@ Window {
         }
         Play{
             id: playing
-
+            onGoMenu:{ parent.state = "menu";playSound.play()}
+            onGameOptions: {parent.state = "options"; playSound.play()}
+            onGameExit: Qt.quit()
         }
 
   states: [

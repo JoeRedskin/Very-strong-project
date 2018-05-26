@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import com.myself 1.0
+
 Item {
     id: chelovechek
     width:50
@@ -36,7 +36,7 @@ Item {
 
         Sprite{
             name: "attack"
-            source: "image/Fight.png"
+            source: "image/fight.png"
 
             frameHeight:45
             frameWidth:46
@@ -77,12 +77,7 @@ Item {
 
     Keys.onPressed: {
 
-        if (event.isAutoRepeat)
-        {
-            return;
-        }
-
-
+        if (event.isAutoRepeat) return;
 
         switch (event.key) {
         case Qt.Key_Left:
@@ -105,7 +100,6 @@ Item {
         case Qt.Key_Q:
             ss.jumpTo("attack")
             break;
-
 
         }
     }
@@ -137,9 +131,6 @@ Item {
 
         }
     }
-
-
-
 
 }
 

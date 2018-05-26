@@ -5,7 +5,6 @@ void herocontrol::setPos(int valX, int valY)
 
 {
 
-
     setPos(valX, valY);
 
 }

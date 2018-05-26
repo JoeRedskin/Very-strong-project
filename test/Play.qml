@@ -4,7 +4,11 @@ Rectangle {
     anchors.fill: parent
 
     Image
+<<<<<<< HEAD
+    {
+=======
            {
+>>>>>>> master
 
         id:playimage
         source: "image/travka2.jpg"
@@ -16,6 +20,12 @@ Rectangle {
 
     Actor
     {
+<<<<<<< HEAD
+        x:100
+        y:100
+
+        focus: true
+=======
 x:100
 y:100
 
@@ -93,10 +103,15 @@ Keys.onReleased: {
 
 
 
+>>>>>>> master
 
 
 
 
+<<<<<<< HEAD
+    }
+=======
+>>>>>>> master
 
 
 }

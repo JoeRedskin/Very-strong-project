@@ -6,7 +6,6 @@ Rectangle {
     anchors.fill: parent
     Image
     {
-        id: image
         x: 0
         anchors.rightMargin: 0
         anchors.bottomMargin: 0
@@ -57,7 +56,6 @@ Rectangle {
         spacing: 5
 
         Text {
-            id: text1
             width: 298
             height: 37
             color: "#ffffff"
@@ -68,7 +66,6 @@ Rectangle {
         }
 
         Slider {
-            id: slider
             x: 0
             width: 300
             from: 1
@@ -81,7 +78,6 @@ Rectangle {
         }
 
         Switch {
-            id: switch1
             width: 100
             text: "Звук"
             autoExclusive: false
@@ -90,7 +86,7 @@ Rectangle {
         }
 
         ButtonT {
-            id: buttonM1; text: "Назад"
+            text: "Назад"
             onClicked: {opt.state = "option";playSound.play()}
         }
     }
@@ -106,7 +102,6 @@ Rectangle {
         spacing: 5
 
         Text {
-            id: text2
             x: 90
             width: 100
             color: "#ffffff"
@@ -118,11 +113,11 @@ Rectangle {
         }
 
         ButtonT {
-            id: buttonT; text: "просто проверка "
+            text: "просто проверка "
         }
 
         ButtonT {
-            id: buttonG1; text: "Назад"
+            text: "Назад"
             onClicked: {opt.state = "option";playSound.play()}
         }
 
@@ -139,7 +134,6 @@ Rectangle {
         spacing: 5
 
         Text {
-            id: autrors_TEXT
             width: 300
             height: 308
             color: "#ffffff"
@@ -149,7 +143,7 @@ Rectangle {
         }
 
         ButtonT {
-            id: buttonA1; text: "Назад"
+            text: "Назад"
             width: 100; height: 35
             onClicked: {opt.state = "option";playSound.play()}
         }
