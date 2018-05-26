@@ -29,6 +29,7 @@ TEST(coord,third)
     y=obj.getPosY();
     ASSERT_EQ(y,54);
 }
+<<<<<<< HEAD
 
 TEST(money,first)
 {
@@ -41,3 +42,5 @@ TEST(money,first)
 
 
 }
+=======
+>>>>>>> 3eef9b3cb2db09d54d87e67fc92183b125d07424
