@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <Qt>
+#include<QSound>
 #include "Controlers/coordinatesofobjects.h"
 #include "Controlers/statusofobject.h"
 #include "Controlers/enemy.h"
@@ -12,6 +13,7 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
+     QSound::play(":/12.wav");
     QQmlApplicationEngine engine;
         qmlRegisterType<coordinatesofobjects>("com.myself",1,0,"Coordinatesofobjects");
                   qmlRegisterType<statusofobject>("com.satus",1,0,"Statusofobject");

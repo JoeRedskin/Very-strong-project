@@ -28,7 +28,7 @@ QML_DESIGNER_IMPORT_PATH =
 
 SOURCES +=
 HEADERS +=Controlers/herocontrol.h \
-        Controlers/coordinatesofobjects.h \
+        Controlers/coordinatesofobjects.h\
         Controlers/statusofobject.h \
         Controlers/enemy.h
 
@@ -39,6 +39,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    12.wav\
    Fon_menu.wav \
     Roland-JV-2080-Nylon-Gtr-C3.wav\
     image/stand.png \

@@ -25,12 +25,12 @@ Window {
 
     Item{
       id: item1
-      MediaPlayer {id: playMusic; source: "12.wav"}
+    /*  MediaPlayer {id: playMusic; source: "12.wav"}
       MouseArea {
             id: play
             anchors.fill: parent
             onPressed: { playMusic.play() }
-        }
+        }*/
       anchors.fill: parent
 
       Menu {
