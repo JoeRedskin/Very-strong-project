@@ -40,7 +40,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
    Fon_menu.wav \
-    Roland.wav \
+    Roland-JV-2080-Nylon-Gtr-C3.wav \
     image/stand.png \
     image/Hero.png \
     image/fight.png \

@@ -25,7 +25,7 @@ Window {
 
     Item{
       id: item1
-      MediaPlayer {id: playMusic; source: "roland.wav"}
+      MediaPlayer {id: playMusic; source: "Roland-JV-2080-Nylon-Gtr-C3.wav"}
       MouseArea {
             id: play
             anchors.fill: parent
