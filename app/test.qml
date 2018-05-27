@@ -2,6 +2,7 @@ import QtQuick 2.9
 import QtQuick.Window 2.3
 import QtMultimedia 5.9
 
+
 Window {
     id: mainWindow
 
@@ -14,6 +15,8 @@ Window {
     minimumWidth: 360
     minimumHeight: 240
 
+
+
     SoundEffect {
         id: playSound
         source: "Fon_menu.wav"
@@ -25,12 +28,12 @@ Window {
 
     Item{
       id: item1
-      MediaPlayer {id: playMusic; source: "Roland-JV-2080-Nylon-Gtr-C3.wav"}
+      /*MediaPlayer {id: playMusic; source: "Roland-JV-2080-Nylon-Gtr-C3.wav"}
       MouseArea {
             id: play
             anchors.fill: parent
             onPressed: { playMusic.play() }
-        }
+        }*/
       anchors.fill: parent
 
       Menu {

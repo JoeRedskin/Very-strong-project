@@ -4,6 +4,9 @@
 #include "Controlers/coordinatesofobjects.h"
 #include "Controlers/statusofobject.h"
 #include "Controlers/enemy.h"
+
+#include <QSound>
+
 int main(int argc, char *argv[])
 {
 #if defined(Q_OS_WIN)
@@ -11,6 +14,7 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
+    QSound::play(":/Roland-JV-2080-Nylon-Gtr-C3.wav");
 
     QQmlApplicationEngine engine;
         qmlRegisterType<coordinatesofobjects>("com.myself",1,0,"Coordinatesofobjects");
