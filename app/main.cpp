@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
         qmlRegisterType<coordinatesofobjects>("com.myself",1,0,"Coordinatesofobjects");
                   qmlRegisterType<statusofobject>("com.satus",1,0,"Statusofobject");
+                   /*qmlRegisterType<Enemy>("com.Enemy",1,0,"Enemy");*/
 
     engine.load(QUrl(QStringLiteral("qrc:/test.qml")));  
     if (engine.rootObjects().isEmpty())

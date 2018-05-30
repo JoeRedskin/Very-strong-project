@@ -3,6 +3,7 @@
 #include "herocontrol.h"
 #include "statusofobject.h"
 #include "coordinatesofobjects.h"
+#include "enemy.h"
 TEST (coord, first)
 {
 coordinatesofobjects obj;
@@ -31,15 +32,13 @@ TEST(coord,third)
 }
 
 
-TEST(money,first)
+/*TEST(money,first)
 {
 
-
-
-
-
-
-
-
-}
+int y;
+//Enemy obj;
+//obj.setMoney(100);
+//y=obj.getMoney();
+ASSERT_EQ(y,100);
+}*/
 
