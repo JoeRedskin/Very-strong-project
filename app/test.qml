@@ -28,7 +28,7 @@ Window {
 
     Item{
       id: item1
-<<<<<<< HEAD
+
       /*MediaPlayer {id: playMusic; source: "Roland-JV-2080-Nylon-Gtr-C3.wav"}
 =======
     /*  MediaPlayer {id: playMusic; source: "12.wav"}

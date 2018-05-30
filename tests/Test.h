@@ -31,8 +31,7 @@ TEST(coord,third)
     ASSERT_EQ(y,54);
 }
 
-<<<<<<< HEAD
-=======
+
 TEST(money,first)
 {
 int m;
@@ -42,17 +41,6 @@ m=obj.getMoney();
 ASSERT_EQ(m,100);
 
 
+}
 
-
->>>>>>> TestWork
-
-/*TEST(money,first)
-{
-
-int y;
-//Enemy obj;
-//obj.setMoney(100);
-//y=obj.getMoney();
-ASSERT_EQ(y,100);
-}*/
 
