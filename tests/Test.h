@@ -42,5 +42,12 @@ ASSERT_EQ(m,100);
 
 
 }
-
+TEST(damage,first)
+{
+    int d;
+    Enemy k;
+    k.setDamage(20);
+    d=k.getDamage();
+    ASSERT_EQ(d,20);
+}
 
