@@ -3,7 +3,7 @@ language:
 
 before_install:
   - pip install --user cpp-coveralls
-  - sudo apt-get install qt5-default libqt5qml5
+  - sudo apt-get install qt5-default qttools5-dev
 script:
   - qmake
   - make
