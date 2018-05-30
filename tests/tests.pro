@@ -19,11 +19,12 @@ HEADERS +=  \
     ../app/Controllers/statusofobject.h\
       ../app/Controllers/herocontrol.h\
     ../app/Controlers/coordinatesofobjects.h\
+    ../app/Controlers/enemy.h\
 Test.h
 
 SOURCES +=     main.cpp \
  ../app/Controlers/herocontrol.cpp\
 ../app/Controlers/statusofobject.cpp\
-../app/Controlers/coordinatesofobjects.cpp
-
+../app/Controlers/coordinatesofobjects.cpp\
+../app/Controlers/enemy.cpp
 INCLUDEPATH += ../app ../app/Controlers

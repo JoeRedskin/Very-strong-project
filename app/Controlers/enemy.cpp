@@ -2,14 +2,15 @@
 #include "statusofobject.h"
 #include "herocontrol.h"
 #include <QObject>
-Enemy::Enemy(unsigned int Health,unsigned int Damage, unsigned int Gold)
-{
+//Enemy::Enemy(unsigned int Health,unsigned int Damage, unsigned int Gold)
+//{
 
-}
+//}
 
-void Enemy:: setMoney(unsigned int Gold)
+int Enemy:: setMoney(unsigned int Gold)
 {
       G=Gold;
+      return G;
 }
 unsigned int Enemy::getMoney()
 {

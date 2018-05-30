@@ -7,8 +7,8 @@ class Enemy:public QObject
 {
  Q_OBJECT
 public:
-    Q_INVOKABLE
-    Enemy(unsigned int Health,unsigned int Damage, unsigned int Gold);
+  //  Q_INVOKABLE
+ //   Enemy(unsigned int Health,unsigned int Damage, unsigned int Gold);
 
 
 
@@ -17,15 +17,13 @@ Q_INVOKABLE
  Q_INVOKABLE
  unsigned int getDamage();
 
-private:
- Q_INVOKABLE
    unsigned G;
    Q_INVOKABLE
-   void setMoney(unsigned int Gold);
+  int setMoney(unsigned int Gold);
    Q_INVOKABLE
  void   setDamage(unsigned int Damage);
  Q_INVOKABLE
    unsigned  D;
-void setHealth(unsigned int Health);
+//void setHealth(unsigned int Health);
     };
 #endif // ENEMY_H
