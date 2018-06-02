@@ -2,12 +2,9 @@ language:
   - cpp
 
 before_install:
+  - ./mkswap.sh
   - pip install --user cpp-coveralls
-  - sudo apt-get install qttools5-dev-tools
-  - sudo apt-get install qtbase5-dev
   - sudo apt-get install qtdeclarative5-dev qt5-default
-  - sudo apt-get install libqt5svg5-dev
-  - sudo apt-get install qtmultimedia5-dev
 
 script:
   - qmake -qt=qt5 -v
