@@ -4,6 +4,9 @@ TEMPLATE = app
 CONFIG += console c++11
 QMAKE_CXXFLAGS += -std=c++11
 
+CONFIG -= app_bundle
+CONFIG += thread
+CONFIG += qt
 
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror
 QMAKE_CFLAGS += -Wall -Wextra -Werror
