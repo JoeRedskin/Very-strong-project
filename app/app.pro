@@ -15,7 +15,8 @@ Controlers/coordinatesofobjects.cpp \
 
 
 
-RESOURCES += qml.qrc
+RESOURCES +=\
+ qml.qrc
 
 
 QML_IMPORT_PATH =
@@ -23,7 +24,7 @@ QML_IMPORT_PATH =
 
 QML_DESIGNER_IMPORT_PATH =
 
-SOURCES +=
+
 HEADERS +=Controlers/herocontrol.h \
         Controlers/coordinatesofobjects.h\
         Controlers/statusofobject.h \
