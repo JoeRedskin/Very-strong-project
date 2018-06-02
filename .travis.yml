@@ -8,9 +8,7 @@ before_install:
   - sudo apt-get install qtdeclarative5-dev qt5-default
   - sudo apt-get install libqt5svg5-dev
   - sudo apt-get install qtmultimedia5-dev
-  - sudo apt-get install -qq g++ qt4-qmake libqt4-dev qt5-qmake qtbase5-dev
-  - sudo apt-get install qtquick1-5-dev qtscript5-dev
- script:
+   script:
   - qmake
   - make
   - ./tests/tests
