@@ -1,6 +1,5 @@
 
-#QT += quick
-QT  += core gui xml qml quick sql core widgets network  #svg multimedia quickwidgets
+QT += quick
 CONFIG += c++11
 CONFIG += resources_big
 DEFINES += QT_DEPRECATED_WARNINGS
