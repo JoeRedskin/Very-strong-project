@@ -4,7 +4,7 @@
 #include "Controlers/coordinatesofobjects.h"
 #include "Controlers/statusofobject.h"
 #include "Controlers/enemy.h"
-
+#include "qqml.h"
 int main(int argc, char *argv[])
 {
 #if defined(Q_OS_WIN)
