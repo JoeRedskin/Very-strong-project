@@ -1,7 +1,7 @@
 #ifndef COORDINATESOFOBJECTS_H
 #define COORDINATESOFOBJECTS_H
 #include <QObject>
-#include <QSharedDataPointer>
+
 class coordinatesofobjects:public QObject
 {
 Q_OBJECT

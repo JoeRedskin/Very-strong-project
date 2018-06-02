@@ -1,7 +1,6 @@
 #ifndef HEROCONTROL_H
 #define HEROCONTROL_H
 #include <QObject>
-
 #include "coordinatesofobjects.h"
 #include"statusofobject.h"
 class herocontrol:public coordinatesofobjects

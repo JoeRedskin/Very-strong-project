@@ -1,7 +1,6 @@
 #ifndef STATUSOFOBJECT_H
 #define STATUSOFOBJECT_H
 #include <QObject>
-#include <QSharedDataPointer>
 #include "coordinatesofobjects.h"
 #include   "statusofobject.h"
 class statusofobject:public QObject
