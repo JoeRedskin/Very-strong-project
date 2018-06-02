@@ -18,5 +18,10 @@
         <file>image/svitok.png</file>
         <file>image/Map_v3.0.png</file>
         <file>image/menu_fon.jpeg</file>
+        <file>Enemy.qml</file>
+ 	<file>image/right22.png</file>
+	<file>image/estand.png</file>
+	<file>image/DDDD.png</file>
+	<file>image/fightE.png</file>
     </qresource>
 </RCC>

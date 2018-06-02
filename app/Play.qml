@@ -27,14 +27,33 @@ Component.onCompleted: {coord.take(44,44);
 
 }
 
+Enemy
+{
+
+Component.onCompleted: { ecoord.take(0,0);
+    x=ecoord.getPosX();
+    y=ecoord.getPosY();
 
 
- focus:true
+}
+
+
+
+
+focus:true
 
   }
     Coordinatesofobjects
     {
         id:coord
+
+    }
+
+
+    Coordinatesofobjects
+    {
+        id:ecoord
+
     }
 
 
@@ -47,3 +66,5 @@ Component.onCompleted: {coord.take(44,44);
 
 
 
+
+}
