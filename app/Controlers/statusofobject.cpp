@@ -4,8 +4,7 @@
 #include "coordinatesofobjects.h"
 int statusofobject::currentExp()
 {
-
-
+return Xp;
 }
 
 
@@ -24,12 +23,13 @@ unsigned int statusofobject::Money(unsigned int Money)
     return Money;
 
 }
-int statusofobject::setdexp(unsigned int xp)
+void  statusofobject::setdexp(unsigned int exp)
 {
-    if(killer=true)
-    {
-        xp=xp+50;
-    }
+
+
+        exp=exp+50;
+
+    Xp=exp;
 }
 
 

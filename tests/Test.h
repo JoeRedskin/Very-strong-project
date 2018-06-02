@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include "herocontrol.h"
 #include "statusofobject.h"
@@ -51,4 +50,11 @@ TEST(damage,first)
     ASSERT_EQ(d,20);
 }
 
-TEST ()
+TEST(xp,first)
+{
+    int x;
+    statusofobject o;
+    o.setdexp(0);
+    x=o.currentExp();
+   ASSERT_EQ(x,50);
+}

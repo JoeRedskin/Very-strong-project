@@ -16,8 +16,8 @@ LIBS += -lgcov
 
 DEFINES += INPUTDIR=\\\"$$PWD/input\\\"
 HEADERS +=  \
-    ../app/Controllers/statusofobject.h\
-      ../app/Controllers/herocontrol.h\
+    ../app/Controlers/statusofobject.h\
+      ../app/Controlers/herocontrol.h\
     ../app/Controlers/coordinatesofobjects.h\
     ../app/Controlers/enemy.h\
 Test.h
