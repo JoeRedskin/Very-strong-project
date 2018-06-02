@@ -1,9 +1,8 @@
 include(gtest_dependency.pri)
 
-QT  += core gui svg xml qml quick quickwidgets sql core multimedia
 TEMPLATE = app
-CONFIG += console
-CONFIG += thread
+CONFIG += console c++11
+QMAKE_CXXFLAGS += -std=c++11
 
 
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror
