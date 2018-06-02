@@ -1,9 +1,7 @@
 #ifndef HEROCONTROL_H
 #define HEROCONTROL_H
-
-
 #include <QObject>
-#include <QWidget>
+
 #include "coordinatesofobjects.h"
 #include"statusofobject.h"
 class herocontrol:public coordinatesofobjects

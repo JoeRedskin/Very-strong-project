@@ -1,8 +1,6 @@
 #ifndef ENEMY_H
 #define ENEMY_H
-
 #include <QObject>
-#include <QWidget>
 class Enemy:public QObject
 {
  Q_OBJECT
