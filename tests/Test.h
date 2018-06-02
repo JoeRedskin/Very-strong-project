@@ -51,3 +51,4 @@ TEST(damage,first)
     ASSERT_EQ(d,20);
 }
 
+TEST ()

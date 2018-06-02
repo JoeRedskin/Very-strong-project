@@ -9,7 +9,8 @@ before_install:
   - sudo apt-get install libqt5svg5-dev
   - sudo apt-get install qtmultimedia5-dev
    script:
-  - qmake
+  - qmake -qt=qt5 -v
+  - qmake -qt=qt5
   - make
   - ./tests/tests
 

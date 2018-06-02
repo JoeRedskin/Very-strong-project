@@ -16,12 +16,12 @@ protected:
    Q_INVOKABLE
    int currentExp();
    Q_INVOKABLE
-    int setdexp();
+    int setdexp(unsigned int exp);
 Q_INVOKABLE
     int tookHP(unsigned int  amountOfHealth);
 
     bool killer=0;
-
+ unsigned int Xp;
 
 };
 
