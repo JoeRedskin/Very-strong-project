@@ -1,5 +1,3 @@
-install: travis_wait 30 mvn install
-
 language:
   - cpp
 
@@ -10,6 +8,7 @@ before_install:
 
 
 script:
+ "bundle exec rake test:$TEST_SUITE"
   - qmake -qt=qt5 -v
   - qmake -qt=qt5
   - make
