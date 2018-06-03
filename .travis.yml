@@ -2,7 +2,6 @@ language:
   - cpp
 
 before_install:
-  - ./mkswap.sh
   - pip install --user cpp-coveralls
   - sudo apt-get install qtdeclarative5-dev qt5-default
 
