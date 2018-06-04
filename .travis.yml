@@ -10,7 +10,7 @@ before_install:
 script:
   - ./makeswap.sh
   - qmake -qt=qt5
-  - travis_wait 20 make 
+  - travis_wait 30 make 
   - ./tests/tests
 
 after_success:
