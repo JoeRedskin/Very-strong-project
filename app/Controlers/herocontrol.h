@@ -1,3 +1,4 @@
+//Для ветки опыта
 #ifndef HEROCONTROL_H
 #define HEROCONTROL_H
 #include <QObject>

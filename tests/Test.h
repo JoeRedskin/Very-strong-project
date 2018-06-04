@@ -59,15 +59,24 @@ TEST(xp,first)
    ASSERT_EQ(x,50);
 }
 
-TEST(herocont,c)
+
+TEST(status,current)
 {
-
-    herocontrol d;
-    d.setPos(5,6);
-
-
-
-
-
+    int Hp;
+   statusofobject d;
+   d.tookHP(100);
+   Hp=d.currentHealth();
+    ASSERT_EQ(Hp,90);
 
 }
+
+TEST(status,money)
+{
+    int M;
+    statusofobject d;
+    d.Money(100);
+    M=d.MYMoney();
+    ASSERT_EQ(M,100);
+
+}
+

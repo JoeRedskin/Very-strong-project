@@ -2,6 +2,7 @@
 #include "enemy.h"
 #include "herocontrol.h"
 #include "coordinatesofobjects.h"
+#include "enemy.h"
 int statusofobject::currentExp()
 {
 return Xp;
@@ -9,20 +10,33 @@ return Xp;
 
 
 
-int statusofobject::currentHealth(unsigned int Health)
+unsigned int statusofobject::currentHealth()
 {
-return Health;
+
+return Hp;
 }
 
-int statusofobject::tookHP(unsigned int amountOfHealth)
+void statusofobject::tookHP(unsigned int Health)
 {
-return amountOfHealth;
+Health=Health-10;
+Hp=Health;
 }
-unsigned int statusofobject::Money(unsigned int Money)
+void statusofobject::Money(unsigned int Money)
 {
-    return Money;
 
+    Mo=Money;
 }
+
+
+unsigned int statusofobject::MYMoney()
+{
+
+    return Mo;
+}
+
+
+
+
 void  statusofobject::setdexp(unsigned int exp)
 {
 
