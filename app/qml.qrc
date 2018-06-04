@@ -21,7 +21,7 @@
         <file>Enemy.qml</file>
  	<file>image/right22.png</file>
 	<file>image/estand.png</file>
-	<file>image/DDDD.png</file>
+	<file>image/NEW.png</file>
 	<file>image/fightE.png</file>
     </qresource>
 </RCC>

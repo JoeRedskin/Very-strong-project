@@ -8,7 +8,7 @@ TEST (coord, first)
 coordinatesofobjects obj;
     int x;
   obj.setPos(40,50);
-  obj.take(40,50);// просто вызов
+  obj.take(40,50);
 x=obj.getPosX();
 
 ASSERT_EQ(x,80);
