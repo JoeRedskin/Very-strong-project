@@ -9,9 +9,8 @@ before_install:
 
 script:
   - ./makeswap.sh
-  - qmake -qt=qt5 -v
   - qmake -qt=qt5
-  - make
+  - travis_wait 20 make 
   - ./tests/tests
 
 after_success:

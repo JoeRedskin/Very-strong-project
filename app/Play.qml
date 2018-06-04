@@ -30,7 +30,7 @@ Component.onCompleted: {coord.take(44,44);
 Enemy
 {
 
-Component.onCompleted: { ecoord.take(0,0);
+Component.onCompleted: { ecoord.take(56,7);
     x=ecoord.getPosX();
     y=ecoord.getPosY();
 
