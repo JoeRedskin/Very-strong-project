@@ -8,7 +8,7 @@ before_install:
 
 
 script:
- "bundle exec rake test:$TEST_SUITE"
+  - ./makeswap.sh
   - qmake -qt=qt5 -v
   - qmake -qt=qt5
   - make
