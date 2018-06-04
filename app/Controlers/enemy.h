@@ -22,6 +22,6 @@ public:
  void   setDamage(unsigned int Damage);
  Q_INVOKABLE
    unsigned  D;
-//void setHealth(unsigned int Health);
+void setHealth(unsigned int Health);
     };
 #endif // ENEMY_H

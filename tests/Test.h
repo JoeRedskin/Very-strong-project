@@ -58,3 +58,16 @@ TEST(xp,first)
     x=o.currentExp();
    ASSERT_EQ(x,50);
 }
+
+TEST(herocont,c)
+{
+
+    herocontrol d;
+    d.setPos(5,6);
+
+
+
+
+
+
+}

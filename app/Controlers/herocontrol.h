@@ -8,7 +8,6 @@ class herocontrol:public coordinatesofobjects
 
 public:
 
-void setPos(int valX, int valY);
 };
 class OurHero :public statusofobject
 {
