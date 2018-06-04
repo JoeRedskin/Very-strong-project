@@ -6,8 +6,12 @@
 TEST (coord, first)
 {
 coordinatesofobjects obj;
-
+    int x;
+  obj.setPos(40,50);
   obj.take(40,50);// просто вызов
+x=obj.getPosX();
+
+ASSERT_EQ(x,80);
  }
 TEST(coord,second)
 {
