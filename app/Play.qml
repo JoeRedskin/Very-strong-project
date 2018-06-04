@@ -25,6 +25,7 @@ Component.onCompleted: {coord.take(99,44);
        y=coord.getPosY();
 
 
+
 }
 
 Enemy
@@ -37,10 +38,9 @@ Component.onCompleted: { ecoord.take(59,7);
 
 }
 
-
-
-
 focus:true
+
+
 
   }
     Coordinatesofobjects

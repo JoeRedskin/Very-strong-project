@@ -52,7 +52,7 @@ Item {
             source: "image/NEW.png"
 
             frameHeight:47
-            frameWidth:64
+            frameWidth:63
 
             frameCount:6
             frameDuration:120
