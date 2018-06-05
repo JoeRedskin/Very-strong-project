@@ -14,7 +14,7 @@ Item {
         direction = Qt.vector2d(ax - x, ay - y)
         xbVelocity = direction.x * 0.01
         ybVelocity = direction.y * 0.01
-        if(xbVelocity<0)
+        if(direction.x<0)
         {
          ff.jumpTo(left)
 
