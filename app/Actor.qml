@@ -11,8 +11,7 @@ Item {
         anchors.centerIn: parent
         width:36
         height:46
-        Sprite
-        {
+        Sprite{
             name: "stand"
             source:"image/stand.png"
             frameHeight:46
@@ -30,7 +29,6 @@ Item {
 
             frameCount:6
             frameDuration:120
-
 
         }
 
@@ -56,19 +54,19 @@ Item {
             frameCount:6
             frameDuration:120
 
-
         }
     }
 
-
     Timer {
-
         interval: 5
         triggeredOnStart: true
         running: true
         repeat: true
         onTriggered: {
+            if (chelovechek.x + xVelocity < 1240 && chelovechek.x + xVelocity > 0)
             chelovechek.x += xVelocity
+
+            if (chelovechek.y + yVelocity < 670 && chelovechek.y + yVelocity > 0)
             chelovechek.y += yVelocity
 
         }
@@ -76,26 +74,19 @@ Item {
 
 
     Keys.onPressed: {
-
-        if (event.isAutoRepeat)
-        {
+        if (event.isAutoRepeat){
             return;
         }
-
-
 
         switch (event.key) {
         case Qt.Key_Left:
             xVelocity -= 1
-               ss.jumpTo("left")
+            ss.jumpTo("left")
             break;
-
         case Qt.Key_Right:
             xVelocity += 1
             ss.jumpTo("right")
             break;
-
-
         case Qt.Key_Down:
             yVelocity += 1
             break;
@@ -106,10 +97,8 @@ Item {
             ss.jumpTo("attack")
             break;
 
-
         }
     }
-
 
     Keys.onReleased: {
         if (event.isAutoRepeat) {
@@ -124,16 +113,12 @@ Item {
             xVelocity -= 1
             ss.jumpTo("stand")
             break;
-
         case Qt.Key_Down:
             yVelocity -= 1
             break;
         case Qt.Key_Up:
             yVelocity += 1
             break;
-
-
-
 
         }
     }

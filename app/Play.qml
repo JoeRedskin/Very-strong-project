@@ -18,8 +18,9 @@ Rectangle {
     Enemy
     {
 
-        id: enemy
-        Component.onCompleted: { ecoord.take(59,7);
+        //id: enemy
+        //focus:true
+        Component.onCompleted: { ecoord.take(50,50);
             x=ecoord.getPosX();
             y=ecoord.getPosY();
 
@@ -30,30 +31,18 @@ Rectangle {
     Actor
     {
         focus:true
-        Component.onCompleted: {coord.take(99,44);
+        Component.onCompleted: {coord.take(1000,640);
             x=coord.getPosX();
             y=coord.getPosY();
 
-
         }
 
-        onXChanged: enemy.changeDirection(x, y)
-        onYChanged: enemy.changeDirection(x, y)
+        /*onXChanged: enemy.changeDirection(x, y)
+        onYChanged: enemy.changeDirection(x, y)*/
 
 
-        Coordinatesofobjects
-        {
-            id:coord
-
-        }
-
-
-        Coordinatesofobjects
-        {
-            id:ecoord
-
-        }
-
+        Coordinatesofobjects {id:coord}
+        Coordinatesofobjects {id:ecoord}
 
     }
 
