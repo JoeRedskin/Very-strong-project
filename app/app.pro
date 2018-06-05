@@ -40,9 +40,8 @@ DISTFILES += \
    Fon_menu.wav \
     Roland-JV-2080-Nylon-Gtr-C3.wav \
     image/stand.png \
-    image/Hero.png \
+    image/Run_left.png \
     image/fight.png \
-    image/left.png \
-    image/travka2.jpg\
+    image/Run_left.png \
     image/new_trava.png\
     image/newleft.png

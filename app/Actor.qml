@@ -23,7 +23,7 @@ Item {
 
         Sprite{
             name: "run"
-            source: "image/Hero.png"
+            source: "image/Run_right.png"
 
             frameHeight:47
             frameWidth:36
@@ -48,7 +48,7 @@ Item {
         }
         Sprite{
             name: "left"
-            source: "image/left.png"
+            source: "image/Run_left.png"
 
             frameHeight:47
             frameWidth:54
