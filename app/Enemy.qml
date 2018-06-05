@@ -7,6 +7,22 @@ Item {
     height:50
     property int xbVelocity: 0
     property int ybVelocity: 0
+    property vector2d direction: Qt.vector2d(1,0)
+
+    function changeDirection(ax, ay)
+    {
+        direction = Qt.vector2d(ax - x, ay - y)
+        xbVelocity = direction.x * 0.01
+        ybVelocity = direction.y * 0.01
+        if(xbVelocity<0)
+        {
+         ff.jumpTo(left)
+
+    }
+
+
+    }
+
     SpriteSequence {
         id:ff
         anchors.centerIn: parent
@@ -76,68 +92,9 @@ Item {
     }
 
 
-    Keys.onPressed: {
-
-        if (event.isAutoRepeat)
-        {
-            return;
-        }
 
 
 
-        switch (event.key) {
-        case Qt.Key_Left:
-            xbVelocity -= 1
-               ff.jumpTo("left")
-            break;
-
-        case Qt.Key_Right:
-            xbVelocity += 1
-            ff.jumpTo("run")
-            break;
-
-
-        case Qt.Key_Down:
-            ybVelocity += 1
-            break;
-        case Qt.Key_Up:
-            ybVelocity -= 1
-            break;
-        case Qt.Key_Q:
-           ff.jumpTo("attack")
-            break;
-
-
-        }
-    }
-
-
-    Keys.onReleased: {
-        if (event.isAutoRepeat) {
-            return;
-        }
-        switch (event.key) {
-        case Qt.Key_Left:
-            xbVelocity += 1
-            ff.jumpTo("stand")
-            break;
-        case Qt.Key_Right:
-            xbVelocity -= 1
-            ff.jumpTo("stand")
-            break;
-
-        case Qt.Key_Down:
-            ybVelocity -= 1
-            break;
-        case Qt.Key_Up:
-            ybVelocity += 1
-            break;
-
-
-
-
-        }
-    }
 
 
 
