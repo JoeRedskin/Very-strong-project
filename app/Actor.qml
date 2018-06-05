@@ -10,22 +10,22 @@ Item {
         id:ss
         anchors.centerIn: parent
         width:36
-        height:47
+        height:46
         Sprite
         {
             name: "stand"
             source:"image/stand.png"
-            frameHeight:47
+            frameHeight:46
             frameWidth:36
                 frameCount:1
                 frameDuration:120
         }
 
         Sprite{
-            name: "run"
+            name: "right"
             source: "image/Run_right.png"
 
-            frameHeight:47
+            frameHeight:46
             frameWidth:36
 
             frameCount:6
@@ -50,7 +50,7 @@ Item {
             name: "left"
             source: "image/Run_left.png"
 
-            frameHeight:47
+            frameHeight:46
             frameWidth:36
 
             frameCount:6
@@ -92,7 +92,7 @@ Item {
 
         case Qt.Key_Right:
             xVelocity += 1
-            ss.jumpTo("run")
+            ss.jumpTo("right")
             break;
 
 

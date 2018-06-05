@@ -10,24 +10,24 @@ Item {
     SpriteSequence {
         id:ff
         anchors.centerIn: parent
-        width:44
-        height:50
+        width:36
+        height:46
         Sprite
         {
             name: "stand"
             source:"image/estand.png"
-            frameHeight:51
-            frameWidth:47
+            frameHeight:46
+            frameWidth:36
                 frameCount:1
                 frameDuration:120
         }
 
         Sprite{
             name: "run"
-            source: "image/right22.png"
+            source: "image/E_right.png"
 
-            frameHeight:49
-            frameWidth:55
+            frameHeight:46
+            frameWidth:36
 
             frameCount:6
             frameDuration:120
@@ -49,10 +49,10 @@ Item {
         }
         Sprite{
             name: "left"
-            source: "image/NEW.png"
+            source: "image/E_left.png"
 
-            frameHeight:47
-            frameWidth:63
+            frameHeight:46
+            frameWidth:36
 
             frameCount:6
             frameDuration:120
