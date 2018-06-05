@@ -15,47 +15,49 @@ Rectangle {
         fillMode: Image.PreserveAspectCrop
     }
 
-    Enemy
-    {
 
-        id: enemy
-        Component.onCompleted: { ecoord.take(59,7);
-            x=ecoord.getPosX();
-            y=ecoord.getPosY();
-
-
-        }
-    }
 
     Actor
     {
-        focus:true
-        Component.onCompleted: {coord.take(99,44);
-            x=coord.getPosX();
-            y=coord.getPosY();
+
+Component.onCompleted: {coord.take(99,44);
+    x=coord.getPosX();
+       y=coord.getPosY();
 
 
-        }
 
-        onXChanged: enemy.changeDirection(x, y)
-        onYChanged: enemy.changeDirection(x, y)
+}
 
+Enemy
+{
 
-        Coordinatesofobjects
-        {
-            id:coord
-
-        }
+Component.onCompleted: { ecoord.take(59,7);
+    x=ecoord.getPosX();
+    y=ecoord.getPosY();
 
 
-        Coordinatesofobjects
-        {
-            id:ecoord
+}
 
-        }
+focus:true
 
+
+
+  }
+    Coordinatesofobjects
+    {
+        id:coord
 
     }
+
+
+    Coordinatesofobjects
+    {
+        id:ecoord
+
+    }
+
+
+}
 
 
 

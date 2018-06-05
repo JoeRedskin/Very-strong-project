@@ -51,7 +51,7 @@ Item {
             source: "image/Run_left.png"
 
             frameHeight:47
-            frameWidth:54
+            frameWidth:36
 
             frameCount:6
             frameDuration:120
