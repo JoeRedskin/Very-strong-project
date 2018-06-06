@@ -20,9 +20,9 @@ Q_INVOKABLE
 Q_INVOKABLE
     unsigned int MYMoney();
     bool killer=0;
- unsigned int Xp;
-unsigned int Hp;
-unsigned int Mo;
+unsigned int Xp = 0;
+unsigned int Hp = 0;
+unsigned int Mo = 0;
 };
 
 #endif // STATUSOFOBJECT_H

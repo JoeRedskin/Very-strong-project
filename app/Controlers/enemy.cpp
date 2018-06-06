@@ -3,10 +3,6 @@
 #include "herocontrol.h"
 #include <QObject>
 
-//Enemy::Enemy(unsigned int Health,unsigned int Damage, unsigned int Gold)
-//{
-
-//}
 
 
 int Enemy:: setMoney(unsigned int Gold)

@@ -26,7 +26,6 @@ ASSERT_EQ(x,100);
 
 TEST(coord,third)
 {
-
     int y;
     coordinatesofobjects obj; //getposY check
     obj.setPos(0,54);
@@ -83,4 +82,48 @@ TEST(status,money)
     ASSERT_EQ(M,100);
 
 }
+
+TEST(hero_lvl,new_lvl)
+{
+   int lvl;
+   herocontrol x;
+   x.setdexp(150);
+   x.Level();
+   lvl = x.getLvl();
+
+   ASSERT_EQ(lvl, 2);
+
+}
+
+TEST(hero_lvl,get_lvl)
+{
+   herocontrol x;
+
+   ASSERT_EQ(x.getLvl(),(unsigned)1);
+}
+
+TEST(hero_lvl,null_hp_for_lvl)
+{
+    int lvl;
+    herocontrol x;
+    x.Level();
+    lvl = x.getLvl();
+
+    ASSERT_EQ(lvl, 1);
+}
+
+TEST(hero_lvl,500xp_is_new_lvl)
+{
+
+    herocontrol x;
+
+    ASSERT_TRUE(x.isNewLevel((unsigned)500));
+}
+
+TEST(hero_lvl,0xp_is_new_lvl)
+{
+    herocontrol x;
+    ASSERT_FALSE(x.isNewLevel((unsigned)0));
+}
+
 

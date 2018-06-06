@@ -3,23 +3,23 @@
 #include "herocontrol.h"
 #include "coordinatesofobjects.h"
 #include "enemy.h"
+
 int statusofobject::currentExp()
 {
-return Xp;
+    return Xp;
 }
-
 
 
 unsigned int statusofobject::currentHealth()
 {
 
-return Hp;
+    return Hp;
 }
 
 void statusofobject::tookHP(unsigned int Health)
 {
-Health=Health-10;
-Hp=Health;
+    Health=Health-10;
+    Hp=Health;
 }
 void statusofobject::Money(unsigned int Money)
 {
@@ -27,22 +27,15 @@ void statusofobject::Money(unsigned int Money)
     Mo=Money;
 }
 
-
 unsigned int statusofobject::MYMoney()
 {
 
     return Mo;
 }
 
-
-
-
 void  statusofobject::setdexp(unsigned int exp)
 {
-
-
-        exp=exp+50;
-
+        exp+=50;
     Xp=exp;
 }
 
