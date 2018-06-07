@@ -17,7 +17,6 @@ Rectangle {
         fillMode: Image.PreserveAspectCrop
     }
     signal goMenu
-    signal gameExit
 
     Column {
         id: option

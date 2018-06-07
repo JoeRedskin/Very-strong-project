@@ -1,7 +1,7 @@
 import QtQuick 2.0
 
 Rectangle {
-    id:gameplay
+    //id:gameplay
 
     signal goMenu
     signal changeCity

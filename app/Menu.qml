@@ -1,6 +1,7 @@
 import QtQuick 2.0
 
 Rectangle {
+    //id: menu
     anchors.fill: parent
 
     Image
@@ -27,12 +28,12 @@ Rectangle {
 
         ButtonT {
             id: button; text: "Новая игра"
-            onClicked: {menu.gameStart()}
+            onClicked: menu.gameStart()
         }
 
         ButtonT {
             id: button1; text: "Настройки"
-            onClicked: {menu.gameOptions() }
+            onClicked: menu.gameOptions()
         }
 
         ButtonT {

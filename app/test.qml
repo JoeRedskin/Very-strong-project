@@ -54,10 +54,10 @@ Window {
         Opt {
             id: options
             onGoMenu:{ parent.state = "menu";playSound.play()}
-            onGameExit: Qt.quit()
         }
         Play{
             id: playing
+            onGoMenu:{ parent.state = "menu";playSound.play()}
 
         }
 

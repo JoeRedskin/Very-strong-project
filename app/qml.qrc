@@ -21,6 +21,8 @@
         <file>image/estand.png</file>
         <file>image/E_left.png</file>
         <file>image/fightE.png</file>
+	   <file>image/hero_menu.png</file>
+        <file>image/invent.png</file>
         <file>image/Run_left.png</file>
     </qresource>
 </RCC>
