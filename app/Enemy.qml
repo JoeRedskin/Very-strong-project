@@ -1,6 +1,6 @@
-import com.satus 1.0
+import com.Status 1.0
 import QtQuick 2.0
-import com.myself 1.0
+import com.Coord 1.0
 Item {
     id: badchelovechek
     width:50

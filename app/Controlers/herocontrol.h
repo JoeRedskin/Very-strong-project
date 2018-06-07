@@ -4,6 +4,7 @@
 #include <QObject>
 #include "coordinatesofobjects.h"
 #include"statusofobject.h"
+
 class herocontrol:public statusofobject
 {
 
@@ -13,9 +14,9 @@ Q_INVOKABLE
 Q_INVOKABLE
    unsigned int getLvl();
 Q_INVOKABLE
-   bool isNewLevel(unsigned int Xp);
+   bool isNewLevel();
+
 Q_INVOKABLE
-   unsigned int Exp = 0;
    unsigned int Lvl = 1;
 };
 

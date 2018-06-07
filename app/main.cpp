@@ -4,7 +4,9 @@
 #include "Controlers/coordinatesofobjects.h"
 #include "Controlers/statusofobject.h"
 #include "Controlers/enemy.h"
+#include "Controlers/herocontrol.h"
 #include "qqml.h"
+
 int main(int argc, char *argv[])
 {
 #if defined(Q_OS_WIN)
@@ -14,9 +16,10 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-        qmlRegisterType<coordinatesofobjects>("com.myself",1,0,"Coordinatesofobjects");
-                  qmlRegisterType<statusofobject>("com.satus",1,0,"Statusofobject");
-          qmlRegisterType<Enemy>("com.Enemy",1,0,"Enemy");
+        qmlRegisterType<coordinatesofobjects>("com.Coord",1,0,"Coordinatesofobjects");
+        qmlRegisterType<statusofobject>("com.Status",1,0,"Statusofobject");
+        qmlRegisterType<Enemy>("com.Enemy",1,0,"Enemy");
+        qmlRegisterType<herocontrol>("com.Hero",1,0,"Herocontrol");
 
     engine.load(QUrl(QStringLiteral("qrc:/test.qml")));  
     if (engine.rootObjects().isEmpty())

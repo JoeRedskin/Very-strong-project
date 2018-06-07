@@ -15,18 +15,19 @@ unsigned int herocontrol::getLvl()
     return Lvl;
 }
 
-bool herocontrol::isNewLevel(unsigned int Xp)
+bool herocontrol::isNewLevel()
 {
-    if(Xp >= getLvl()*100)
+    if(Exp >= getLvl()*100)
         return true;
     return false;
 }
 
 void herocontrol::Level()
 {
-    Exp = currentExp();
-    if(isNewLevel(Exp))
+    if(isNewLevel())
     {
         Lvl = (int)Exp/100;
+        Hp += 10;
     }
+
 }

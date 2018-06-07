@@ -8,7 +8,7 @@ Q_OBJECT
 private:
     struct coordinates
     {
-        int x, y;
+        int x=0, y=0;
     }
     pos;
  public:

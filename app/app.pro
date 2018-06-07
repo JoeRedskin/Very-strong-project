@@ -26,7 +26,7 @@ QML_DESIGNER_IMPORT_PATH =
 
 
 HEADERS +=Controlers/herocontrol.h \
-        Controlers/coordinatesofobjects.h\
+        Controlers/coordinatesofobjects.h \
         Controlers/statusofobject.h \
         Controlers/enemy.h
 

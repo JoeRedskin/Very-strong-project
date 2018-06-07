@@ -23,7 +23,6 @@ coordinatesofobjects obj; //getposX check
 ASSERT_EQ(x,100);
 
 }
-
 TEST(coord,third)
 {
     int y;
@@ -32,7 +31,6 @@ TEST(coord,third)
     y=obj.getPosY();
     ASSERT_EQ(y,54);
 }
-
 
 TEST(money,first)
 {
@@ -53,26 +51,20 @@ TEST(damage,first)
     ASSERT_EQ(d,20);
 }
 
-TEST(xp,first)
+TEST(Exp,first)
 {
-    int x;
     statusofobject o;
-    o.setdexp(0);
-    x=o.currentExp();
-   ASSERT_EQ(x,50);
+    o.setdexp();
+   ASSERT_EQ(o.currentExp(),50);
 }
-
 
 TEST(status,current)
 {
-    int Hp;
    statusofobject d;
-   d.tookHP(100);
-   Hp=d.currentHealth();
-    ASSERT_EQ(Hp,90);
+   d.tookHP();
+    ASSERT_EQ(d.currentHealth(),90);
 
 }
-
 TEST(status,money)
 {
     int M;
@@ -85,13 +77,11 @@ TEST(status,money)
 
 TEST(hero_lvl,new_lvl)
 {
-   int lvl;
    herocontrol x;
-   x.setdexp(150);
+   x.Exp = 200;
    x.Level();
-   lvl = x.getLvl();
 
-   ASSERT_EQ(lvl, 2);
+   ASSERT_EQ(x.getLvl(),(unsigned) 2);
 
 }
 
@@ -116,14 +106,14 @@ TEST(hero_lvl,500xp_is_new_lvl)
 {
 
     herocontrol x;
-
-    ASSERT_TRUE(x.isNewLevel((unsigned)500));
+    x.Exp = 500;
+    ASSERT_TRUE(x.isNewLevel());
 }
 
 TEST(hero_lvl,0xp_is_new_lvl)
 {
     herocontrol x;
-    ASSERT_FALSE(x.isNewLevel((unsigned)0));
+    ASSERT_FALSE(x.isNewLevel());
 }
 
 

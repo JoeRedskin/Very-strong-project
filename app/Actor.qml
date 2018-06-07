@@ -1,21 +1,31 @@
 import QtQuick 2.0
-import com.myself 1.0
+import com.Coord 1.0
+import com.Hero 1.0
+
+
 Item {
+
+
     id: chelovechek
-    width:50
-    height:50
+    width:81
+    height:77
     property int xVelocity: 0
     property int yVelocity: 0
+
+
     SpriteSequence {
         id:ss
         anchors.centerIn: parent
-        width:36
-        height:46
+        width:37
+        height:62
+        anchors.verticalCenterOffset: 7
+        anchors.horizontalCenterOffset: 0
+
         Sprite{
             name: "stand"
             source:"image/stand.png"
-            frameHeight:46
-            frameWidth:36
+            frameHeight:62
+            frameWidth:37
                 frameCount:1
                 frameDuration:120
         }
@@ -24,36 +34,34 @@ Item {
             name: "right"
             source: "image/Run_right.png"
 
-            frameHeight:46
-            frameWidth:36
+            frameHeight:62
+            frameWidth:38
 
             frameCount:6
             frameDuration:120
-
         }
 
         Sprite{
             name: "attack"
             source: "image/Fight.png"
 
-            frameHeight:45
-            frameWidth:46
+            frameHeight:62
+            frameWidth:37
 
             frameCount:2
             frameDuration:120
             to: {"stand" : 1}
-
         }
+
         Sprite{
             name: "left"
             source: "image/Run_left.png"
 
-            frameHeight:46
-            frameWidth:36
+            frameHeight:62
+            frameWidth:38
 
             frameCount:6
             frameDuration:120
-
         }
     }
 
@@ -63,14 +71,16 @@ Item {
         running: true
         repeat: true
         onTriggered: {
-            if (chelovechek.x + xVelocity < 1240 && chelovechek.x + xVelocity > 0)
+            if (chelovechek.x + xVelocity < 1280 && chelovechek.x + xVelocity > 0)
             chelovechek.x += xVelocity
 
-            if (chelovechek.y + yVelocity < 670 && chelovechek.y + yVelocity > 0)
-            chelovechek.y += yVelocity
+            if (chelovechek.y + yVelocity < 790 && chelovechek.y + yVelocity > 0)
+                chelovechek.y += yVelocity
 
         }
     }
+
+
 
 
     Keys.onPressed: {
@@ -122,10 +132,6 @@ Item {
 
         }
     }
-
-
-
-
 }
 
 

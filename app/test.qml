@@ -9,9 +9,9 @@ Window {
     title: qsTr("Adventures of knight")
     visible: true
     width: 1280
-    height: 720
+    height: 800
     maximumWidth: 1280
-    maximumHeight: 720
+    maximumHeight: 800
     minimumWidth: 360
     minimumHeight: 240
 

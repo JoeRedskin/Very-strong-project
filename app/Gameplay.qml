@@ -20,8 +20,8 @@ Rectangle {
 
     ButtonT {
         id: nazadmenu
-        x: 0; y: 670
-        width: 114; height: 50
+        x: 0; y: 737
+        width: 182; height: 63
         text: "Назад"
         onClicked: {
             gameplay.goMenu()
@@ -37,8 +37,8 @@ Rectangle {
         anchors.fill: parent
         ButtonT {
             id: buttonT1
-            x: 188
-            y: 254
+            x: 185
+            y: 291
             width: 26
             height: 27
             clip: false

@@ -8,20 +8,20 @@ class statusofobject:public QObject
     Q_OBJECT
 public:
     Q_INVOKABLE
- unsigned  int currentHealth();
+  int currentHealth();
    Q_INVOKABLE
  void  Money(unsigned int Money);
    Q_INVOKABLE
    int currentExp();
    Q_INVOKABLE
-    void setdexp(unsigned int exp);
+    void setdexp();
 Q_INVOKABLE
-    void tookHP(unsigned int Health);
+    void tookHP();
 Q_INVOKABLE
     unsigned int MYMoney();
     bool killer=0;
-unsigned int Xp = 0;
-unsigned int Hp = 0;
+unsigned int Exp = 0;
+int Hp = 100;
 unsigned int Mo = 0;
 };
 
