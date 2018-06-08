@@ -7,9 +7,9 @@ Item {
     height:50
     property int xbVelocity: 0
     property int ybVelocity: 0
-    //property vector2d direction: Qt.vector2d(1,0)
+    property vector2d direction: Qt.vector2d(1,0)
 
-    /*function changeDirection(ax, ay)
+    function changeDirection(ax, ay)
     {
         direction = Qt.vector2d(ax - x, ay - y)
         xbVelocity = direction.x * 0.01
@@ -20,7 +20,7 @@ Item {
         }
 
 
-    }*/
+    }
 
     SpriteSequence {
         id:ff

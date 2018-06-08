@@ -23,7 +23,7 @@ Rectangle {
     Enemy
     {
 
-        //id: enemy
+        id: enemy
         //focus:true
         Component.onCompleted: { ecoord.take(50,50);
             x=ecoord.getPosX();
@@ -43,8 +43,8 @@ Rectangle {
 
         }
 
-        /*onXChanged: enemy.changeDirection(x, y)
-        onYChanged: enemy.changeDirection(x, y)*/
+        onXChanged: enemy.changeDirection(x, y)
+        onYChanged: enemy.changeDirection(x, y)
 
 
         Coordinatesofobjects {id:coord}
